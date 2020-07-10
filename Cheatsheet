@@ -1,4 +1,4 @@
-Create new environment:
+Create new environment with python version as 3.5:
   conda create --name imagescrapper python=3.5
   conda activate imagescrapper
 
