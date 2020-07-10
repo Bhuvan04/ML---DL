@@ -1,0 +1,21 @@
+Create new environment:
+
+
+Mongo DB:
+1. Table in sql called as collection in Mongo DB
+2. Rows in SQL called as records/documents in Mongo DB
+3. Documents has Key Value pairs.
+
+API --> REST --> JSON
+
+Python --> Web Applications --> Flask (Web application development framework) --> we can build gui or just the url
+
+While deploying we need to keep the same environment, so we have created the requirements.txt file
+pip install -r requirements.txt
+
+Create file automatically:
+pip freeze >requirements.txt
+
+Adding the web scrapping file in the pivotal:
+cf login -a https://api.run.pivotal.io
+cf push
