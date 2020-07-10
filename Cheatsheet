@@ -1,5 +1,9 @@
 Create new environment:
+  conda create --name imagescrapper python=3.5
+  conda activate imagescrapper
 
+Get a list of all my environments, active environment is shown with *
+  conda env list
 
 Mongo DB:
 1. Table in sql called as collection in Mongo DB
@@ -11,11 +15,11 @@ API --> REST --> JSON
 Python --> Web Applications --> Flask (Web application development framework) --> we can build gui or just the url
 
 While deploying we need to keep the same environment, so we have created the requirements.txt file
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
 Create file automatically:
-pip freeze >requirements.txt
+  pip freeze >requirements.txt
 
 Adding the web scrapping file in the pivotal:
-cf login -a https://api.run.pivotal.io
-cf push
+  cf login -a https://api.run.pivotal.io
+  cf push
