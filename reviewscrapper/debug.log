@@ -1,0 +1,4 @@
+[0710/022612.994:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\bbharti\AppData\Local\Temp\scoped_dir20852_30173635\Crashpad: The system cannot find the file specified. (0x2)
+[0710/023045.235:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\bbharti\AppData\Local\Temp\scoped_dir21640_771710741\Crashpad: The system cannot find the file specified. (0x2)
+[0712/033721.496:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\bbharti\AppData\Local\Temp\scoped_dir7856_792817054\Crashpad: The system cannot find the file specified. (0x2)
+[0712/034409.095:ERROR:crash_report_database_win.cc(558)] GetFileAttributes C:\Users\bbharti\AppData\Local\Temp\scoped_dir34572_1538809766\Crashpad: The system cannot find the file specified. (0x2)
