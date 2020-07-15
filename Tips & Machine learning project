@@ -1,0 +1,17 @@
+Enable personalized, real-time banking experiences with chatbots
+
+Identify the next best action for the customer - sentiment analysis
+
+Capture, prioritize, and route service requests to the correct employee, and improve response times - 
+  A busy government organization gets innumerable service requests on an annual basis. Machine learning tools can help to capture incoming service requests, 
+  to route them to the correct employee in real-time, to refine prioritization, and improve response times. 
+
+Automate the recognition of disease
+Recommend next best actions for individual care plans
+
+Standardization rescales data so that it has a mean of 0 and a standard deviation of 1.
+  The formula for this is: (𝑥 − 𝜇)/𝜎
+ 
+Normalization rescales the data into the range [0, 1].
+  The formula for this is: (𝑥 −𝑥𝑚𝑖𝑛)/(𝑥𝑚𝑎𝑥 −𝑥𝑚𝑖𝑛)
+  
