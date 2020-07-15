@@ -15,3 +15,20 @@ Standardization rescales data so that it has a mean of 0 and a standard deviatio
 Normalization rescales the data into the range [0, 1].
   The formula for this is: (𝑥 −𝑥𝑚𝑖𝑛)/(𝑥𝑚𝑎𝑥 −𝑥𝑚𝑖𝑛)
   
+There are two common approaches for encoding categorical data: 
+  Ordinal encoding: we simply convert the categorical data into integer codes ranging from 0 to (number of categories – 1).
+    One of the potential drawbacks to this approach is that it implicitly assumes an order across the categories.
+  One hot encoding: we transform each categorical value into a column. If there are n categorical values, n new columns are added.
+    One drawback of one-hot encoding is that it can potentially generate a very large number of columns.
+ 
+Image Data type : The number of channels required to represent the color is known as the color depth or simply depth. With an RGB image, depth = 3, 
+                  because there are three channels (Red, Green, and Blue). In contrast, a grayscale image has depth = 1, because there is only one channel.
+    Encoding an Image: We need to know the following three things about an image to reproduce it:
+                       Horizontal position of each pixel
+                       Vertical position of each pixel
+                       Color of each pixel
+        Thus, we can fully encode an image numerically by using a vector with three dimensions. The size of the vector required for any given image would be the 
+                        height * width * depth of that image.
+
+
+  
