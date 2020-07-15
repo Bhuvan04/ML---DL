@@ -30,5 +30,8 @@ Image Data type : The number of channels required to represent the color is know
         Thus, we can fully encode an image numerically by using a vector with three dimensions. The size of the vector required for any given image would be the 
                         height * width * depth of that image.
 
-
-  
+Text Data Type: Text normalization is the process of transforming a piece of text into a canonical (official) form.
+                1. Lemmatization is an example of normalization. A lemma is the dictionary form of a word and lemmatization is the process of reducing multiple inflections 
+                to that single dictionary form. 
+                2. Stop words are high-frequency words that are unnecessary (or unwanted) during the analysis, you may want to remove stop words.
+                   Tokenized the text (i.e. split each string of text into a list of smaller parts or tokens)
