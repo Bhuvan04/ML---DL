@@ -45,5 +45,8 @@ Linear Regression:
 ML is adjusting the parameters in such a way that error value comes out to be minimum. We can achieve it by Gradient descent. 
   Gradient descent is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.
     Model used to change the learning rate to get the optimum value but we don't have control to change that.
+    
+Column can also be called as features or attributes
+Row can also be called as entity, instance or input vector
 
 
