@@ -38,5 +38,9 @@ Text Data Type: Text normalization is the process of transforming a piece of tex
                 2. Stop words are high-frequency words that are unnecessary (or unwanted) during the analysis, you may want to remove stop words.
                    Tokenized the text (i.e. split each string of text into a list of smaller parts or tokens)
 
+Linear Regression:
 ML is adjusting the parameters in such a way that error value comes out to be minimum. We can achieve it by Gradient descent. 
 Gradient descent is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.
+Model used to change the learning rate to get the optimum value but we don't have control to change that.
+
+
