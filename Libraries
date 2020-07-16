@@ -1,0 +1,15 @@
+ML libraries : Scikit-Learn, Pandas, Numpy, SciPy,  Matplotlib
+DL Libraires : Keras, Tensorflow, Pytorch
+TensorFlow is a free, open-source software library for machine learning built by Google Brain.
+Keras is a Python deep-learning library. It provide an Application Programming Interface (API) that can be used to interface with other libraries, such as TensorFlow,
+    in order to program neural networks. Keras is designed for rapid development and experimentation.
+PyTorch is an open source library for machine learning, developed in large part by Facebook's AI Research lab. It is known for being comparatively easy to use, 
+    especially for developers already familiar with Python and a Pythonic code style.
+
+Apache Spark is an open-source analytics engine that is designed for cluster-computing and that is often used for large-scale data processing and big data.
+
+End-to-end with Azure:
+  You can analyze and train a small amount of data with your local machine using Jupyter notebook, Visual studio, or other tools. 
+  But with very large amounts of data, or you need a faster processor, it's a better idea to train and test the model remotely using cloud services such as Microsoft Azure.
+  You can use Azure Data Science Virtual Machine, Azure Databricks (Data analytics platform, optimized for use with Microsoft cloud services), Azure Machine Learning Compute,
+  or SQL server ML services to train and test models and use Azure Kubernetes to deploy models.
