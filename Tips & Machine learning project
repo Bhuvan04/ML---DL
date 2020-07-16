@@ -37,3 +37,5 @@ Text Data Type: Text normalization is the process of transforming a piece of tex
                 to that single dictionary form. 
                 2. Stop words are high-frequency words that are unnecessary (or unwanted) during the analysis, you may want to remove stop words.
                    Tokenized the text (i.e. split each string of text into a list of smaller parts or tokens)
+
+ML is adjusting the parameters in such a way that error value comes out to be minimum.
