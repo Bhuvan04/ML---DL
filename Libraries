@@ -1,4 +1,5 @@
-ML libraries : Scikit-Learn, Pandas, Numpy, SciPy,  Matplotlib
+ML libraries : Scikit-Learn, Pandas, Numpy, SciPy,  Matplotlib, Seaborn, Plotly,
+               Bokeh (Bokeh generates visualizations in HTML and JavaScript. This allows for web-based visualizations that can have interactive features.)
 DL Libraires : Keras, Tensorflow, Pytorch
 TensorFlow is a free, open-source software library for machine learning built by Google Brain.
 Keras is a Python deep-learning library. It provide an Application Programming Interface (API) that can be used to interface with other libraries, such as TensorFlow,
