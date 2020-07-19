@@ -44,9 +44,36 @@ Text Data Type: Text normalization is the process of transforming a piece of tex
 Linear Regression:
 ML is adjusting the parameters in such a way that error value comes out to be minimum. We can achieve it by Gradient descent. 
   Gradient descent is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function.
-    Model used to change the learning rate to get the optimum value but we don't have control to change that.
+  Model used to change the learning rate to get the optimum value but we don't have control to change that.
+  The process of finding the best model is essentially a process of finding the coefficients and bias that minimize this error. we use a cost function.
+  The most commonly used cost function for linear regression is the root mean squared error (RMSE)
+  
+    
     
 Column can also be called as features or attributes
 Row can also be called as entity, instance or input vector
 
+The Trade-Offs
+  Two of the most important are bias vs. variance and overfitting vs. underfitting.
+  
+  Bias measures how inaccurate the model prediction is in comparison with the true output. It is due to erroneous assumptions made in the machine learning process to simplify
+    the model and make the target function easier to learn. High model complexity tends to have a low bias.
+  Variance measures how much the target function will change if different training data is used. Variance can be caused by modeling the random noise in the training data. 
+    High model complexity tends to have a high variance.
 
+  As a general trend, parametric and linear algorithms often have high bias and low variance, whereas non-parametric and non-linear algorithms often have low bias 
+    and high variance.
+    
+  Overfitting refers to the situation in which models fit the training data very well, but fail to generalize to new data.
+
+  Underfitting refers to the situation in which models neither fit the training data nor generalize to new data.
+
+The prediction error can be viewed as the sum of model error (error coming from the model) and the irreducible error (coming from data collection).
+    prediction error = Bias error + variance + error + irreducible error
+    
+low bias are KNN and decision trees
+High bias & low variance is in Linear regression
+Support vector machines usually have a high variance
+
+k-fold cross-validation: it split the initial training data into k subsets and train the model k times. In each training, it uses one subset as the testing data and 
+                         the rest as training data. This is to reduce Overfitting.
