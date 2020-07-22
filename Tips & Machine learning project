@@ -77,3 +77,8 @@ Support vector machines usually have a high variance
 
 k-fold cross-validation: it split the initial training data into k subsets and train the model k times. In each training, it uses one subset as the testing data and 
                          the rest as training data. This is to reduce Overfitting.
+
+Feature Engineering: We can improve the situation of having too many features through dimensionality reduction.
+  1. PCA (Principal Component Analysis)
+  2. t-SNE (t-Distributed Stochastic Neighboring Entities)
+  3. Feature embedding
