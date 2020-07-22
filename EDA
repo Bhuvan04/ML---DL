@@ -42,3 +42,14 @@ X_train.CHAS.value_counts()
   X_train = sc.fit_transform(X_train)
   X_test = sc.transform(X_test)
  
+# Changing dtypes to datetime
+  data.date_of_game = pd.to_datetime(data.date_of_game, errors='coerce')
+  
+# replacing categorical data with numerical values
+  l_unique = data['game_season'].unique()
+  v_unique = np.arange(len(l_unique))
+  data['game_season'].replace(to_replace=l_unique, value=v_unique, inplace=True)
+
+
+
+
