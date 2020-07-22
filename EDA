@@ -26,6 +26,13 @@ X_train.CHAS.value_counts()
   
 # filling the nan values with the mode
   df['cat2'] = df['cat2'].fillna(df['cat2'].mode()[0])
+# forward filling
+  data.loc[:,col] = data.loc[:,col].ffill()
+# Filling Missing Values In "shot_basics" based on "range_of_short" column! if the range of the shot is 16-24 ft it's a mid range shot
+  data.loc[(data.range_of_shot == '16-24 ft.'), 'shot_basics'] = data[data.range_of_shot == '16-24 ft.'].shot_basics.fillna(value='Mid Range')
+# if the range of the shot is less than 8 ft then randomly assign goal line or goal area value to the shot 
+  data.loc[(data.range_of_shot == 'Less Than 8 ft.')&(data.shot_basics.isnull()), 'shot_basics']   =  pd.Series(data[(data.range_of_shot == 'Less Than 8 ft.')&(data.shot_basics.isnull())].shot_basics.apply(lambda x: x if type(x)==str else np.random.choice(['Goal Area', 'Goal Line'],1,p=[0.7590347263095939, 0.24096527369040613])[0]))
+
   
 # Dropping the column
   df.drop('City_Category',axis=1, inplace=True) 
