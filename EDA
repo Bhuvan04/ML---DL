@@ -1,0 +1,44 @@
+X = bos.iloc[:,:-1]
+Y = bos.iloc[:,-1]
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size=0.33,random_state=42)
+
+X_train.shape
+X_test.shape
+
+X_train.describe()
+X_train.CHAS.unique()
+X_train.CHAS.value_counts()
+
+# Percentage and Sum of Missing values in each Columns
+  missing_data = pd.DataFrame({'total_missing': data.isnull().sum(), 'perc_missing': (data.isnull().sum()/data.shape[0])*100})
+  missing_data
+
+# Mapping
+  df['Gender']=df['Gender'].map({'F':0, 'M':1})
+
+# Get Dummies
+  city = pd.get_dummies(df['City_Category'],drop_first=True)
+
+# Concat two datasets
+  df = pd.concat([df,city],axis=1)
+  
+# filling the nan values with the mode
+  df['cat2'] = df['cat2'].fillna(df['cat2'].mode()[0])
+  
+# Dropping the column
+  df.drop('City_Category',axis=1, inplace=True) 
+  
+# Replacing the value by using str method
+  df['Stay_In_Current_City_Years']=df.Stay_In_Current_City_Years.str.replace('+','') # replacing + with blank
+
+# Creating barplot
+  sns.barplot('Age','Purchase',hue='Gender',data=df_i)
+
+# Feature Scaling So that data in all the columns are to the same scale
+  from sklearn.preprocessing import StandardScaler
+  sc = StandardScaler()
+  X_train = sc.fit_transform(X_train)
+  X_test = sc.transform(X_test)
+ 
