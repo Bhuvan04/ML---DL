@@ -1,5 +1,0 @@
-Decision Tree:
-  Entropy of all the columns : E = -Pi * log(Pi)
-    Pi = When Target value is a then for how many values of column x with 1 value occours
-  Information Gain : G = (1-submission(Sv/S)Ei)
-    Sv is the occurances and S is total number of values
