@@ -3,9 +3,12 @@ Decision Tree: (Entropy is for categorical features and for continuous features 
     Pi = When Target value is a then for how many values of column x with 1 value occours
   Information Gain : G = (1-submission(Sv/S)Ei)
     Sv is the occurances and S is total number of values
-  Gini Indexing : (1-submission(Pi^2))
+  Gini Indexing : (1-submission(Pi^2)) - Route node will start with the lowest gini index column
 
-Bagging - Each tree given equal wt. eg. Random Forest
-Boosting - Trees given unequal wt.
-
-XGBOOST --> Best algo
+Ensemble techniques - Used to reduce variance, bias and improve prediction :
+  Bagging - Each tree given equal wt. eg. Random Forest
+  Boosting - Trees given unequal wt.
+    Ada Boost - In this we have contribution(Alfa) & wt.
+    Gradient Boost - In this we have residuals and learning rate.
+    XGBOOST & XGBClassifier--> Best algo - using hessian which is second order derivative of loss function, here gamma used for tunning
+  Stacking
