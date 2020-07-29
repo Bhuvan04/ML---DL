@@ -11,4 +11,17 @@ Ensemble techniques - Used to reduce variance, bias and improve prediction :
     Ada Boost - In this we have contribution(Alfa) & wt.
     Gradient Boost - In this we have residuals and learning rate.
     XGBOOST & XGBClassifier--> Best algo - using hessian which is second order derivative of loss function, here gamma used for tunning
-  Stacking
+  Stacking - We can use different models for the same dataset but in begging and boosting we used to create only single model.
+  Pasting: without replacement
+  
+KNN (Lazy Learner)- Is used for supervised learning (for small dataset it is good but not for large dataset). We should use K value as odd number.
+  Euclidean Distance - For continuous distance
+  Hamming Distance - For catagorical distance : if A=A, then 0 else 1
+  Manhattan Distance - Absolute distance calculation.
+  
+K-mean is used for unsupervised learning
+
+VIF: Can tell whether there is any multicollinearity present. If VIF>5 then yes there is multicollinearity.
+PCA: Can tell us the data loss or information loss
+
+To find whether our model is good or not (Mostly calulated using confusion matrix) : ROC, AOC, Presision, recall, acurracy, score
