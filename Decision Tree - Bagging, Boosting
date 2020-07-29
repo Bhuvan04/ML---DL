@@ -24,4 +24,7 @@ K-mean is used for unsupervised learning
 VIF: Can tell whether there is any multicollinearity present. If VIF>5 then yes there is multicollinearity.
 PCA: Can tell us the data loss or information loss
 
-To find whether our model is good or not (Mostly calulated using confusion matrix) : ROC, AOC, Presision, recall, acurracy, score
+To find whether our model is good or not (Mostly calulated using confusion matrix) : ROC, AOC, Presision, recall, acurracy, score, Elbow method
+
+Supervised : we have X & Y datasets
+Unsupervised : we have only X dataset
