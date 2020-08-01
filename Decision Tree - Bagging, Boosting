@@ -7,10 +7,11 @@ Decision Tree: (Entropy is for categorical features and for continuous features 
 
 Ensemble techniques - Used to reduce variance, bias and improve prediction :
   Bagging - Each tree given equal wt. eg. Random Forest
-  Boosting - Trees given unequal wt.
-    Ada Boost - In this we have contribution(Alfa) & wt.
+  Boosting - Trees given unequal wt. Using RSS value we can choose the route node for the boosting algo's
+    Ada Boost (Adaptive Boosting) - In this we have contribution(Alfa) & wt.
     Gradient Boost - In this we have residuals and learning rate.
-    XGBOOST & XGBClassifier--> Best algo - using hessian which is second order derivative of loss function, here gamma used for tunning
+    XGBOOST & XGBClassifier (Xtreme Gradient Boost)--> Best algo - using hessian(No. of residuals) which is second order derivative of loss function, here gamma used for tunning
+      It talks about memory & Cache optimization and do the parallel processing(n_jobs = -1, for full cpu power use). It does greedy approach.
   Stacking - We can use different models for the same dataset but in begging and boosting we used to create only single model.
   Pasting: without replacement
   
@@ -28,3 +29,16 @@ To find whether our model is good or not (Mostly calulated using confusion matri
 
 Supervised : we have X & Y datasets
 Unsupervised : we have only X dataset
+
+Find the shape of the dataset and then we can apply the perticular type of clusturing approach. DBSCAN (Density based clusturing) is best. 
+With the help of WCSS and Elbow method we try to find the value of K
+
+Stacking and XGBoost are the best algorithms.
+
+PCA (In Sklearn.decomposition): Using Scree plot we can see how many PCA components can explain the maximum variance and can choose those many components only.
+  We are having some information loss. It is only for continuous values
+  MFA (Multifactor Analysis): Takes care of both continuous and categorical values.
+  LDA performs better than PCA. PCA is unsupervised and LDA is supervised approach. PCA is faster than LDA
+  
+
+
