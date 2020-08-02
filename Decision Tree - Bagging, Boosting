@@ -6,7 +6,7 @@ Decision Tree: (Entropy or gini indexing is for categorical features and for con
   Gini Indexing : (1-submission(Pi^2)) - Route node will start with the lowest gini index column
 
 Ensemble techniques - Used to reduce variance, bias and improve prediction :
-  Bagging - Each tree given equal wt. eg. Random Forest
+  Bagging (bootstrap aggregation) - Each tree given equal wt. eg. Random Forest
   Boosting - Trees given unequal wt. Using RSS value we can choose the route node for the boosting algo's
     Ada Boost (Adaptive Boosting) - In this we have contribution(Alfa) & wt.
     Gradient Boost - In this we have residuals and learning rate.
