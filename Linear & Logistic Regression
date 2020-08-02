@@ -1,0 +1,16 @@
+Linear Regression Model Evaluation:
+  Root Mean Squared Error (RMSE) : Square root of the squared differences between the predicted and actual values.
+  Mean Absolute Error (MAE) : Average of the absolute difference between each prediction and the true value.
+  R-Squared : How close the regression line is to the true values.
+  Spearman Correlation : Strength and direction of the relationship between predicted and actual values.
+
+Logistic Regression Model evaluation:
+  Confusion Matrix: TP, FP, FN, TN
+    Accuracy = (TP+TN)/(TP+FP+FN+TN)
+    Recall = TP/(TP+FN)
+    Precision = TP/(TP+FP)
+    F1 Score = 2∗(Precision∗Recall)/(Precision+Recall)
+  
+  Receiver Operating Characteristics (ROC) curve = TP on Y axis & FP on X axis.
+
+  Area Under the Curve (AUC) = lies b/w 0.5 to 1 ideally. An AUC of 0.5 indicates random guessing, while an AUC of 1.0 indicates perfect classification.
