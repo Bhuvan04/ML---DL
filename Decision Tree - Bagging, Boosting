@@ -1,7 +1,7 @@
-Decision Tree: (Entropy is for categorical features and for continuous features we can use gini indexing)
+Decision Tree: (Entropy or gini indexing is for categorical features and for continuous features we can use RSS to select the route node)
   Entropy of all the columns : E = -Pi * log(Pi)
     Pi = When Target value is a then for how many values of column x with 1 value occours
-  Information Gain : G = (1-submission(Sv/S)Ei)
+  Information Gain,  It is the difference between entropies before and after the split : G = (1-submission(Sv/S)Ei)
     Sv is the occurances and S is total number of values
   Gini Indexing : (1-submission(Pi^2)) - Route node will start with the lowest gini index column
 
