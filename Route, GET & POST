@@ -1,0 +1,25 @@
+Route Python Code:
+  @app.route("/predict", methods=['POST'])
+  @cross_origin()
+
+POST vs GET: 
+https://www.edureka.co/blog/get-and-post-method/
+https://www.javatpoint.com/get-vs-post
+
+Both GET and POST method is used to transfer data from client to server in HTTP protocol but Main difference between POST and 
+  GET method is that GET carries request parameter appended in URL string while POST carries request parameter in message body 
+  which makes it more secure way of transferring data
+
+Some other features of GET requests are: GET/RegisterDao.jsp?name1=value1&name2=value2
+  It remains in the browser history
+  It can be bookmarked
+  It can be cached
+  It have length restrictions
+  It should never be used when dealing with sensitive data
+  It should only be used for retrieving the data
+
+Some other features of POST requests are:
+  This requests cannot be bookmarked
+  This requests have no restrictions on length of data
+  This requests are never cached
+  This requests do not retain in the browser history
