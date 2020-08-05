@@ -23,3 +23,5 @@ Some other features of POST requests are:
   This requests have no restrictions on length of data
   This requests are never cached
   This requests do not retain in the browser history
+
+ Asynchronous logging : Log plenty of data while running system code.
