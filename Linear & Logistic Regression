@@ -14,3 +14,8 @@ Logistic Regression Model evaluation:
   Receiver Operating Characteristics (ROC) curve = TP on Y axis & FP on X axis.
 
   Area Under the Curve (AUC) = lies b/w 0.5 to 1 ideally. An AUC of 0.5 indicates random guessing, while an AUC of 1.0 indicates perfect classification.
+  
+  Ridge Regression : Increases Bias but decreases variance. SSR+lamda*(Slope^2)
+                     Lamda could vary from 0 to infinity any value.
+  
+  Lasso Regression : Increases Bias but decreases variance. SSR+lamda*(|Slope|)
