@@ -1,4 +1,11 @@
-Linear Regression Model Evaluation:
+Common machine learning algorithms for regression problems include:
+  Linear Regression : Fast training, linear model
+  Decision Forest Regression : Accurate, fast training times
+  Neural Net Regression : Accurate, long training times
+
+Gradient Desent : A method that minimizes the amount of error at each step of the model training process.
+
+Linear Regression ((Ordinary Least Square Method) & (Gradient Desent)) Model Evaluation: 
   Root Mean Squared Error (RMSE) : Square root of the squared differences between the predicted and actual values.
   Mean Absolute Error (MAE) : Average of the absolute difference between each prediction and the true value.
   R-Squared : How close the regression line is to the true values.
