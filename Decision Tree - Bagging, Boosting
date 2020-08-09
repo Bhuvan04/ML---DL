@@ -17,7 +17,9 @@ Ensemble techniques - Used to reduce variance, bias and improve prediction :
       It talks about memory & Cache optimization and do the parallel processing(n_jobs = -1, for full cpu power use). It does greedy approach.
   Stacking - We can use different models for the same dataset but in begging and boosting we used to create only single model.
   Pasting: without replacement
-  
+
+Boosting > Random Forest > Bagging > Single Tree
+
 KNN (Lazy Learner)- Is used for supervised learning (for small dataset it is good but not for large dataset). We should use K value as odd number.
   Euclidean Distance - For continuous distance
   Hamming Distance - For catagorical distance : if A=A, then 0 else 1
