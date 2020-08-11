@@ -53,9 +53,17 @@ X_train.CHAS.value_counts()
   data.date_of_game = pd.to_datetime(data.date_of_game, errors='coerce')
   
 # replacing categorical data with numerical values
-  l_unique = data['game_season'].unique()
-  v_unique = np.arange(len(l_unique))
-  data['game_season'].replace(to_replace=l_unique, value=v_unique, inplace=True)
+# Labeling the catagories with integers
+for col in train.columns:
+    if train[col].dtypes == object: # if the column has categorical values
+        l_unique = train[col].unique() # find the unique values
+        v_unique = np.arange(len(l_unique)) # create a list of number from zero to the length of the I_unique values
+        train[col].replace(to_replace=l_unique, value=v_unique, inplace=True) # replace the categorical values with numerical values
+        train[col] = train[col].astype('int') # change the type from int64 to int32
+        
+        # same has been done for test data as well
+        test[col].replace(to_replace=l_unique, value=v_unique, inplace=True)
+        test[col] = test[col].astype('int')
 
 
 
