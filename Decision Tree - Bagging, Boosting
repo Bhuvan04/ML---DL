@@ -18,7 +18,8 @@ Ensemble techniques - Used to reduce variance, bias and improve prediction :
   Stacking - We can use different models for the same dataset but in begging and boosting we used to create only single model.
   Pasting: without replacement
 
-Boosting > Random Forest > Bagging > Single Tree
+Boosting > Random Forest(Limited variables take at a time to build a tree) > Bagging(Bootstrap) > Single Tree
+ When we do average variance comes down.
 
 KNN (Lazy Learner)- Is used for supervised learning (for small dataset it is good but not for large dataset). We should use K value as odd number.
   Euclidean Distance - For continuous distance
