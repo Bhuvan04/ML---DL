@@ -13,8 +13,11 @@ Ensemble techniques - Used to reduce variance, bias and improve prediction :
     Ada Boost (Adaptive Boosting) - In this we have contribution(Alfa) & wt.
     Gradient Boost - In this we have residuals and learning rate. Gradient boosting is an approach where new models are created that predict the residuals or errors of prior 
       models & then added together to make the final prediction. It is called gradient boosting because it uses a gradient descent algorithm to minimize the loss when adding new models.
-    XGBOOST & XGBClassifier (Xtreme Gradient Boost)--> Best algo - using hessian(No. of residuals) which is second order derivative of loss function, here gamma used for tunning
+    XGBOOST & XGBClassifier (Xtreme Gradient Boost)--> Best algo (Start with the prediction of 0.5) - 
+      using hessian(No. of residuals) which is second order derivative of loss function, here gamma used for tunning
       It talks about memory & Cache optimization and do the parallel processing(n_jobs = -1, for full cpu power use). It does greedy approach.
+      Loss + gamma*T (Pruning term) + (1/2)*lambda*(O^2) (Regularization term)     
+      
   Stacking - We can use different models for the same dataset but in begging and boosting we used to create only single model.
   Pasting: without replacement
 
