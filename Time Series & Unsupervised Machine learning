@@ -1,0 +1,31 @@
+ARIMA: AR->p, MA->q, I->d
+  Until unless your time series is stationary, you cannot build a time series model. In cases where the stationary criterion are violated, 
+  the first requisite becomes to stationarize the time series and then try stochastic models to predict this time series. 
+  There are multiple ways of bringing this stationarity. Some of them are Detrending, Differencing etc.
+    This includes stationary series, random walks , Rho Coefficient, Dickey Fuller Test of Stationarity.
+  
+  To find whether series is stationary or not then we can calculate sm.statsl.durbine_watson(Dataset). it assumes that new error(et) is dependent on old error(et-1)
+    if value is less than 2 then that means series is stationary
+  
+  In a moving average series of lag n, we will not get any correlation between x(t) and x(t – n -1) . Hence, the total correlation chart cuts off at nth lag. 
+    So it becomes simple to find the lag for a MA series. For an AR series this correlation will gradually go down without any cut off value. 
+  
+  ACF - Auto Correlation Factor (After how many timeperiod correlation fails, P)
+  PACF - Partial Auto Correlation Factor
+  
+https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/
+
+
+
+Types of Unsupervised Machine Learning Models:
+  1. Clustering -> Personalized or target marketing, Document(Email) Classification, fraud Detection, Medical imaging, City planning(Houses according to geo location or house type)
+    a. Centroid based clusturing - Groups members based on their distance from the center of the cluster eg. K-mean 
+          K-means parameters - number of centroids, Intialization approach(kmean++, random, k-mean), Distance Matrix-Euclidian, Number of iterations
+    b. Density based clusturing - Groups members based on how closely they are packed together; can learn clusters of arbitrary shape.
+    c. Distribution based clusturing - Groups members based on the probability of a member belonging to a particular distribution.
+    d. Hierarchical clusturing - Builds a tree of clusters.
+  2. Feature Learning: transforms set of features into other features that might be potentially more useful.
+  3. Anomaly detection: Identify two major group of entities - Normal & Abnormal (anomalies) eg. credit card fraud detection
+  
+  
+  

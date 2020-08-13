@@ -1,6 +1,0 @@
-ARIMA: AR->p, MA->q, I->d
-  To find whether series is stationary or not then we can calculate sm.statsl.durbine_watson(Dataset). it assumes that new error(et) is dependent on old error(et-1)
-    if value is less than 2 then that means series is stationary
-  ACF - Auto Correlation Factor (After how many timeperiod correlation fails, P)
-  PACF - Partial Auto Correlation Factor
-  
