@@ -1,4 +1,7 @@
 ARIMA: AR->p, MA->q, I->d
+
+https://www.youtube.com/watch?v=e8Yw4alG16Q
+
   Until unless your time series is stationary, you cannot build a time series model. In cases where the stationary criterion are violated, 
   the first requisite becomes to stationarize the time series and then try stochastic models to predict this time series. 
   There are multiple ways of bringing this stationarity. Some of them are Detrending, Differencing etc.
