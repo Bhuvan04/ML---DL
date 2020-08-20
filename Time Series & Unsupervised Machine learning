@@ -19,7 +19,8 @@ To find whether series is stationary or not then :
   
 if P-value is less than 0.05 - dataset is stationary
 In case we get the non-stationory dataset we need to take the log & then again check p-value ,
-  if still it is not stationary we can subtract the rolling mean of log value from log value. 
+  if still it is not stationary we can subtract the rolling mean/exponential mean/previous day (use .shift funtion) of log value from log value.
+  Diff = np.log(birth_data) - np.log(birth_data).shift()
  
  2. we can also calculate sm.statsl.durbine_watson(Dataset). it assumes that new error(et) is dependent on old error(et-1)
     if value is less than 2 then that means series is stationary
