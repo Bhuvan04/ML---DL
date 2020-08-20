@@ -2,12 +2,26 @@ ARIMA: AR->p, MA->q, I->d
 
 https://www.youtube.com/watch?v=e8Yw4alG16Q
 
+stationarity means --> Constant Mean, Variance & CoVariance
+
   Until unless your time series is stationary, you cannot build a time series model. In cases where the stationary criterion are violated, 
   the first requisite becomes to stationarize the time series and then try stochastic models to predict this time series. 
   There are multiple ways of bringing this stationarity. Some of them are Detrending, Differencing etc.
     This includes stationary series, random walks , Rho Coefficient, Dickey Fuller Test of Stationarity.
+
+To find whether series is stationary or not then :
+1. We can do Dickey Fuller Test of Stationarity:
+  from statsmodels.tsa.stattools import adfuller
+  dftest= adfuller(birth_data['births'], autolag = 'AIC')
+  dfoutput= pd.Series(dftest[0:4],index = ['Test Statistic','p-value','#lags used','#observations used'])
+  for key,value in dftest[4].items():
+      dfoutput['Critical Value %s'%key] = value
   
-  To find whether series is stationary or not then we can calculate sm.statsl.durbine_watson(Dataset). it assumes that new error(et) is dependent on old error(et-1)
+if P-value is less than 0.05 - dataset is stationary
+In case we get the non-stationory dataset we need to take the log & then again check p-value ,
+  if still it is not stationary we can subtract the rolling mean of log value from log value. 
+ 
+ 2. we can also calculate sm.statsl.durbine_watson(Dataset). it assumes that new error(et) is dependent on old error(et-1)
     if value is less than 2 then that means series is stationary
   
   In a moving average series of lag n, we will not get any correlation between x(t) and x(t – n -1) . Hence, the total correlation chart cuts off at nth lag. 
