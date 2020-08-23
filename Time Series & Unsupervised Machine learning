@@ -28,8 +28,8 @@ In case we get the non-stationory dataset we need to take the log & then again c
   In a moving average series of lag n, we will not get any correlation between x(t) and x(t – n -1) . Hence, the total correlation chart cuts off at nth lag. 
     So it becomes simple to find the lag for a MA series. For an AR series this correlation will gradually go down without any cut off value. 
   
-  ACF - Auto Correlation Factor (After how many timeperiod correlation fails, P)
-  PACF - Partial Auto Correlation Factor
+  ACF - Auto Correlation Factor (After how many timeperiod correlation fails, q)
+  PACF - Partial Auto Correlation Factor - p
   
 https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/
 
