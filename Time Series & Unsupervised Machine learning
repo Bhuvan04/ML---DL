@@ -1,5 +1,9 @@
 ARIMA: AR->p, MA->q, I->d
 
+We use the ACF plot to decide which one of these terms we would use for our time series:
+  If there is a Positive autocorrelation at lag 1 then we use the AR model
+  If there is a Negative autocorrelation at lag 1 then we use the MA model
+
 https://www.youtube.com/watch?v=e8Yw4alG16Q
 
 stationarity means --> Constant Mean, Variance & CoVariance
@@ -33,7 +37,7 @@ In case we get the non-stationory dataset we need to take the log & then again c
   
 https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/
 
-
+--> Adding holiday factors to be SARIMA-X
 
 Types of Unsupervised Machine Learning Models:
   1. Clustering -> Personalized or target marketing, Document(Email) Classification, fraud Detection, Medical imaging, City planning(Houses according to geo location or house type)
