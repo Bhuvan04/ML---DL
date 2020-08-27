@@ -1,6 +1,7 @@
 Create new environment with python version as 3.5:
-  conda create --name imagescrapper python=3.5
+  conda create --n imagescrapper python=3.5
   conda activate imagescrapper
+  pip install Jupyter
 
 Get a list of all my environments, active environment is shown with *
   conda env list
