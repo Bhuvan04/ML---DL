@@ -6,6 +6,11 @@ Create new environment with python version as 3.5:
 
 Get a list of all my environments, active environment is shown with *
   conda env list
+  
+Change the path to locate the pacakage:
+  import os
+  import sys
+  os.environ['SPARK_HOME']=r'C:\Users\bbharti\Downloads\spark-3.0.0-bin-hadoop2.7'
 
 Mongo DB: https://code.tutsplus.com/tutorials/create-a-database-cluster-in-the-cloud-with-mongodb-atlas--cms-31840#:~:text=Fortunately%2C%20there's%20an%20easier%20alternative,in%20a%20matter%20of%20minutes.
 1. Table in sql called as collection in Mongo DB
