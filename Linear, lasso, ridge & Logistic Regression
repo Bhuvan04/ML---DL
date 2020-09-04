@@ -26,3 +26,5 @@ Logistic Regression Model evaluation:
                      Lamda could vary from 0 to infinity any value.
   
   Lasso Regression : Increases Bias but decreases variance. SSR+lamda*(|Slope|)
+
+https://towardsdatascience.com/understanding-the-bias-variance-tradeoff-165e6942b229
