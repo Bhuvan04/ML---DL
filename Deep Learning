@@ -4,3 +4,20 @@ Text classification and the fundamentals of processing text in machine learning
 Feature learning, an essential task in feature engineering
 Anomaly detection : Autoencoder Neural Network
 Time Series Forcasting : Temporal Convolutional Network, Recurrent Neural Network, Multivariate Regressor
+
+Image/Voice Recognition & Pattern Detection --> Few examples
+
+API:
+https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-apis-application-programming-interfaces-5-apis-a-data-scientist-must-know/
+
+Social Media Sentiment Analysis : By using data from Twitter and Facebook API.
+Opinion Mining : By using data from Twitter and Facebook API.
+Stock Prediction : By using data from Yahoo Stock API and Quandl API.
+Most Popular languages on Github : By using data from Github API.
+Microsoft Face Sentiment Recognition : By using Microsoft face API.
+
+https://www.analyticsvidhya.com/blog/2017/02/6-deep-learning-applications-beginner-python/
+
+
+
+
