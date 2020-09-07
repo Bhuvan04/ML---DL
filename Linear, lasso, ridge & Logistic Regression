@@ -20,7 +20,7 @@ Linear Regression ((Ordinary Least Square Method) & (Gradient Desent)) Model Eva
   R-Squared : How close the regression line is to the true values.
   Spearman Correlation : Strength and direction of the relationship between predicted and actual values.
 
-Logistic Regression Model evaluation:
+Logistic Regression Model evaluation: odds = p/(1-p) => log((p)/(1-p)) = b + b1x1 + b2x2 ...
   Confusion Matrix: TP, FP, FN, TN
     Accuracy = (TP+TN)/(TP+FP+FN+TN)
     Recall = TP/(TP+FN)
