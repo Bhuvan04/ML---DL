@@ -1,7 +1,7 @@
 Create new environment with python version as 3.6.9:
   conda create --name ML_Banking_Interest python=3.6.9
   conda install -name ML_Banking_Interest python=3.6.9
-  conda activate imagescrapper
+  conda activate "imagescrapper"
   pip install Jupyter
   jupyter notebook
 
