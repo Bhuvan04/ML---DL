@@ -1,5 +1,7 @@
 ARIMA: AR->p, MA->q, I->d
 
+https://www.youtube.com/watch?v=2kmBRH0caBA
+
 We use the ACF plot to decide which one of these terms we would use for our time series:
   If there is a Positive autocorrelation at lag 1 then we use the AR model
   If there is a Negative autocorrelation at lag 1 then we use the MA model
